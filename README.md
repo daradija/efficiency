@@ -22,21 +22,22 @@ Posibilidades:
 
 Calculemos la matriz Hessiana de la función:
 
-\[
+$$
 f(x, y) = x^3 + 2xy + y^2
-\]
+$$
+
 
 Usaremos `SymPy` para obtener la Hessiana. Veamos el código y su ejecución:
 
 La matriz Hessiana de la función \( f(x, y) = x^3 + 2xy + y^2 \) es:
 
-\[
+$$
 H_f =
 \begin{bmatrix}
 6x & 2 \\
 2 & 2
 \end{bmatrix}
-\]
+$$
 
 ```python
 import sympy as sp
@@ -56,3 +57,4 @@ hessian_f = sp.Matrix([[sp.diff(grad, var) for var in (x, y)] for grad in grad_f
 # Mostrar la matriz Hessiana
 hessian_f
 ```
+Una red 
